@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Institute of technology - Admission</title>
+    
+</head>
+<style>
+  .container {
+  display: flex; /* This turns on Flexbox for the container */
+  justify-content: space-between; /* This pushes the child elements to opposite ends */
+  align-items: flex-start; /* Aligns items at the top of the container */
+  /* Optional: You can add padding or a max-width to the container to control its size on the page */
+  max-width: 1000px;
+  margin: 0 auto; /* This centers the container on the page */
+}
+
+/* Optional styling to control the size of the image and form */
+.container form {
+  width: 100%; /* Makes the form take up 45% of the container's width */
+}
+.container img {
+  width: 70%; /* Makes the image take up 45% of the container's width */
+  
+}
+
+
+</style>
+<body>
+  <div class="container">
+    <img src="C:\Users\Lenovo\Documents\classasignment\locarepo\Orientation_2025-8-14-16-10-27.jpg" alt="University Logo" >
+    
+
+    <main>
+        <h2 style="text-align:center;">Admission Form</h2>
+        <form style="text-align:center;" action="/submit-admission" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="department">Preferred Department:</label><br>
+            <select id="department" name="department">
+                <option value="cse">Computer Science & Engineering</option>
+                <option value="eee">Electrical & Electronics Engineering</option>
+                <option value="mech">Mechanical Engineering</option>
+            </select><br><br>
+            
+            <input type="submit" value="Submit Application">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 National Institute of technology</p>
+    </footer>
+
+  </div>
+    
+</body>
+</html>
