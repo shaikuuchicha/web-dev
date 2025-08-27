@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      nit warangal college
+    </title>
+  </head>
+  <style>
+    h1 {
+  text-align: center; /* or left, right, justify */
+}
+/* Basic styling for the entire navigation bar */
+nav {
+  background-color: #222; /* A dark background color */
+  overflow: hidden; /* This is important for containing the floated list items */
+}
+
+/* Remove default list styling */
+nav ul {
+  list-style-type: none; /* Removes the bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the individual list items to make them horizontal */
+nav li {
+  float: left; /* This is the key to making the list horizontal */
+}
+
+/* Style the navigation links */
+nav li a {
+  display: block; /* Makes the entire link area clickable */
+  color: white; /* Text color */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /* Removes the underline from links */
+}
+
+/* Change the background color on hover */
+nav li a:hover {
+  background-color: #39f4f4; /* A slightly lighter shade of dark for the hover effect */
+}
+/* Container for the image and the navigation bar */
+.image-container {
+  position: relative; /* This is crucial for positioning the navigation bar */
+  width: 100%; /* Or a specific width */
+}
+
+/* Make the image responsive and fill the container */
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block; /* Removes any default spacing below the image */
+}
+
+/* Style the navigation bar to be placed over the image */
+.overlay-nav {
+  position: absolute; /* Positions the navigation bar over the image */
+  top: 0; /* Aligns it to the top of the container */
+  left: 0; /* Aligns it to the left of the container */
+  width: 100%; /* Makes the navigation bar span the full width of the container */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 10px 0;
+  z-index: 10; /* Ensures the nav bar is on top of the image */
+}
+
+/* Basic styling for the nav links */
+.overlay-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.overlay-nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.overlay-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+  </style>
+  <body>
+    <h1>
+       NIT warangal
+    </h1>
+    <div class="image-container">
+      <nav class="overlay-nav">
+      <ul>
+        <li>
+          <a href="aboutus.html">about us</a>
+        </li>
+        <li><a href="department.html">Departments</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+      </ul>
+       <img src="C:\Users\Lenovo\Documents\classasignment\locarepo\main_building_2025-2-24-12-53-30.jpg" height="40%">
+    </nav>
+      
+    </div>
+   
+    
+  </body>
+</html>
