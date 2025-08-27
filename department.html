@@ -1,32 +1,129 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>
-    department in NIT warangal
-  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Department Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    
+      justify-content: center;
+    }
+   h1 {
+  text-align: center;
+   color:rgb(87, 87, 232);
+   margin-bottom: 30px;
+   
+}
+
+    .card-container {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+       flex: 0 0 calc(33.33% - 20px);
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 0;
+      color: #1b3a5f;
+    }
+
+    .card button {
+      margin: 15px 0 20px;
+      padding: 10px 20px;
+      border: 2px solid #1b3a5f;
+      background: transparent;
+      color: #1b3a5f;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .card button:hover {
+      background: #1b3a5f;
+      color: white;
+    }
+    a {
+  text-decoration: none;    /* remove underline */
+  color: #1b3a5f;           /* normal link color */
+  
+  
+  
+  display: inline-block;    /* so padding works */
+  transition: 0.3s;
+}
+
+a:hover {
+  background-color: #1b3a5f; /* background on hover */
+  color: white;              /* text color on hover */
+}
+
+  </style>
 </head>
-<style>
-  p {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box; /* This ensures padding and borders are included in the total width and height */
-  margin: 0;
-  padding: 20px; /* Optional: adds some internal spacing */
-  background-color: #f0f0f0; /* Optional: a light background to see the area */
-  font-family: sans-serif;
-  font-size: 1.2em;
-}
- h1 {
-  text-align: center; /* or left, right, justify */
-  color: rgb(66, 66, 241);
-}
-</style>
+
+
 <body>
   <h1>Department</h1>
-  <ol>
-    <li>cse</li>
-    <li>mechanical </li>
-    <li>computation and mathematics</li>
-  </ol>
-  <p>to view<a href="https://www.nitw.ac.in/departments">more</a></p>
+  <div class="card-container">
+    <div class="card">
+      <img src="C:\Users\Lenovo\Documents\classasignment\locarepo\Bio-Technology_2023-9-25-19-48-35.jpg" alt="Biotech">
+      <h3>Biotechnology</h3>
+      <button>  <a href="https://www.nitw.ac.in/ce">View More</a></button>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\Lenovo\Documents\classasignment\locarepo\Chemical_Engineering_2023-10-16-11-17-30.jpg" alt="Chemical Engg">
+      <h3>Chemical Engineering</h3>
+      <button>  <a href="https://www.nitw.ac.in/ce">View More</a></button>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\Lenovo\Documents\classasignment\locarepo\Chemistry_2023-9-24-18-29-43.jpg" alt="Chemistry">
+      <h3>Chemistry</h3>
+      <button>  <a href="https://www.nitw.ac.in/ce">View More</a></button>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Lenovo\Documents\classasignment\locarepo\civil_2022-0-22-21-30-32.jpeg" alt="civil Engineering">
+      <h3>civil Engineering</h3>
+      <button><a href="https://www.nitw.ac.in/ce">View More</a></button>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Lenovo\Documents\classasignment\locarepo\physics_dept_2023-7-22-10-47-36.jpg" alt="Physics">
+      <h3>Physics</h3>
+      <button><a href="https://www.nitw.ac.in/ce">View More</a></button>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Lenovo\Documents\classasignment\locarepo\cse_2022-0-22-20-13-32.jpg" alt="civil Engineering">
+      <h3>Computer Science</h3>
+      <button><a href="https://www.nitw.ac.in/ce">View More</a></button>
+    </div>
+  </div>
+
 </body>
 </html>
