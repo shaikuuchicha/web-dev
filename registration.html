@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        registration form
+    </title>
+</head>
+<style>
+    table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+</style>
+<body>
+    <table>
+        <tr>
+         <th colspan="2" style="text-align: center; border-right: none;">
+            Registration
+         </th>
+        </tr>
+        <tr>
+            <td>Firstname*</td>
+        <td><input type="text" id="Firstname" name="Firstname" placeholder="Enter your Firstname" required> </td>
+        </tr>
+        <tr>
+            <td>Lastname*</td>
+            <td><input type="text" id="Lastname" name="Lastname" placeholder="Enter your lastname" required> </td>
+            
+        </tr>
+        <tr>
+            <td>Email*</td>
+            <td><input type="email" id="email" name="email" placeholder="Enter your email" required> </td>
+        </tr>
+        <tr>
+            <td>PhoneNumber</td>
+           <td><input type="tel" id="contact" placeholder="Enter your Number" ></td> 
+               
+        </tr>
+        <tr>
+            <th colspan="2" style="text-align: center; border-right: none;">Acount details</th>                     
+        </tr>
+        <tr>
+            <td>Username*</td>
+            <td><input type="text" id="Username" name="Username" placeholder="Enter your Username" required> </td>
+
+        </tr>
+        <tr>
+            <td>Password*</td>
+            <td><input type="password" id="password" name="password" placeholder="Enter your password" required> </td>
+        </tr>
+        <tr>
+            <td>Confirm Password*</td>
+            <td><input type="password" id="cpassword" name="cpassword" placeholder="Enter your password" required> </td>
+            <tr> <th colspan="2" style="text-align: center; border-right: none;">Address</th></tr>
+        </tr>
+        <tr>
+            <td>Address line1*</td>
+            <td><input type="text" id="address" name="address" placeholder="Enter your address" required> </td>
+          
+        </tr>
+        <tr>
+            <td>Address line2*</td>
+            <td><input type="text" id="addresss" name="addresss" placeholder="Enter your address" > </td>
+          
+        </tr>
+        <tr>
+            <td>City*</td>
+            <td><input type="text" id="City" name="City" placeholder="Enter your city" required> </td>
+
+        </tr>
+        <tr>
+            <td>State*</td>
+            <td>
+                <select id="state" name="state">
+                    <option value="ap">arunachal pradesh</option>
+                  <option value="bihar">bihar</option>
+                  <option value="absa">mp</option>
+                  <option value="fiat">up</option>
+                  <option value="audi">gujarat</option>
+                </select></td>
+        </tr>
+        <tr><td>zipcode*</td>
+        <td><input type="text" id="zipcode" name="zipcode" placeholder="enter your zipcode" required></td>
+        </tr>
+        <tr>
+            <th colspan="2" style="text-align: center; border-right: none;">Preference</th>
+        </tr>
+        <tr>
+            <td>Gender*</td>
+            <td><input type="radio" id="contactChoice1" name="Gender" value="male" />
+                <label for="contactChoice1">male</label>
+          
+                <input type="radio" id="contactChoice2" name="Gender" value="female" />
+                <label for="contactChoice2">female</label>
+          
+                <input type="radio" id="contactChoice3" name="Gender" value="other" />
+                <label for="contactChoice3">other</label></td>
+        </tr>
+        <tr>
+            <td>Subscribe newsletter</td>
+            <td> <input type="checkbox" id="chose"></td>
+
+           
+        </tr>
+        <tr>
+            <td>
+                Short box
+            </td>
+            <td><input type="text" id="self" placeholder="Tell us about yourself" maxlength="200" style="width: 300px; height: 50px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" id="yes"><label>I agree to the terms and conditions.<iframe src="termsandcondition.html"></iframe></label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Registration</button>
+                <button type="reset">reset</button>
+            </td>
+        </tr>
+       
+
+
+        
+    </table>
+</body>
+</html>
